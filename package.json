@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-personaly",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Cordova Personaly Plugin for Persona.ly",
   "scripts": {
     "prepublish": "run-s clean build",

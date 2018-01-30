@@ -144,16 +144,16 @@ public class Personaly extends CordovaPlugin {
             @Override
             public void onSuccess() {
                 if (plugin.config.getGender()) {
-                    Personaly.CONFIG.setGender(plugin.config.getGender())
+                    Personaly.CONFIG.setGender(plugin.config.getGender());
                 }
                 if (plugin.config.getDateOfBirth()) {
-                    Personaly.CONFIG.setDateOfBirth(plugin.config.getDateOfBirth())
+                    Personaly.CONFIG.setDateOfBirth(plugin.config.getDateOfBirth());
                 }
                 if (plugin.config.getAge()) {
-                    Personaly.CONFIG.setAge(plugin.config.getAge())
+                    Personaly.CONFIG.setAge(plugin.config.getAge());
                 }
                 if (plugin.config.getUserId()) {
-                    Personaly.CONFIG.setUserId(plugin.config.getUserId())
+                    Personaly.CONFIG.setUserId(plugin.config.getUserId());
                 }
                 callbackContext.success();
             }
