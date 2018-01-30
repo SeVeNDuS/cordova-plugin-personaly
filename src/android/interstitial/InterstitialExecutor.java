@@ -18,7 +18,7 @@ public class InterstitialExecutor extends AbstractExecutor {
     /**
      * The interstitial ad to display to the user.
      */
-    private InterstitialAd interstitialAd;
+    private CampaignAd interstitialAd;
 
     public InterstitialExecutor(Personaly plugin) {
         super(plugin);
@@ -104,7 +104,7 @@ public class InterstitialExecutor extends AbstractExecutor {
     public void destroy() {
         if (interstitialAd != null) {
             interstitialAd.setAdListener(null);
-            interstitialAd.dispose(config.getAppWallAdUnitId());
+            interstitialAd.dispose(config.getInterstitialAdUnitId());
             interstitialAd = null;
         }
     }

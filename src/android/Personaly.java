@@ -48,7 +48,7 @@ public class Personaly extends CordovaPlugin {
     private RewardVideoExecutor rewardVideoExecutor = null;
     private OfferWallExecutor offerWallExecutor = null;
     private AppWallExecutor appWallExecutor = null;
-    private PopUpOfferExecutor popupOfferExecutor = null;
+    private PopupOfferExecutor popupOfferExecutor = null;
 
     private boolean isGpsAvailable = false;
 

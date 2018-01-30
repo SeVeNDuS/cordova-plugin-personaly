@@ -14,11 +14,11 @@ import org.json.JSONObject;
 import name.sevendus.cordova.personaly.AbstractExecutor;
 import name.sevendus.cordova.personaly.Personaly;
 
-public class RewardVideoExecutor extends AbstractExecutor {
+public class RewardedVideoExecutor extends AbstractExecutor {
     /**
      * RewardVideo
      */
-    private RewardedVideoAd rewardedVideoAd;
+    private CampaignAd rewardedVideoAd;
     boolean isRewardedVideoLoading = false;
     final Object rewardedVideoLock = new Object();
 

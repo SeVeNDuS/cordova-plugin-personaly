@@ -12,7 +12,7 @@ import name.sevendus.cordova.personaly.AbstractExecutor;
 class PopupOfferListener extends AdListener {
     private final PopupOfferxecutor executor;
 
-    PopupOfferListener(PopupOfferxecutor executor) {
+    PopupOfferListener(PopupOfferExecutor executor) {
         this.executor = executor;
     }
 
