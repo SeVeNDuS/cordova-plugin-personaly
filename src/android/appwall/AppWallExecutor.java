@@ -20,7 +20,7 @@ public class AppWallExecutor extends AbstractExecutor {
      */
     private AppWallAd appWallAd;
 
-    public AppWAllExecutor(Personaly plugin) {
+    public AppWallExecutor(Personaly plugin) {
         super(plugin);
     }
 
