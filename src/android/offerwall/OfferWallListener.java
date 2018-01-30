@@ -73,7 +73,7 @@ class OfferWallListener extends AdListener {
             e.printStackTrace();
         }
         executor.fireAdEvent("personaly.offerwall.events.REWARDED", data);
-        executor.fireAdEvent("onAdRewarded", data)
+        executor.fireAdEvent("onAdRewarded", data);
     }
 
     @Override

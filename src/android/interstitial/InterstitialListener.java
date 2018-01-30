@@ -80,7 +80,7 @@ class InterstitialListener extends AdListener {
             e.printStackTrace();
         }
         executor.fireAdEvent("personaly.interstitial.events.REWARDED", data);
-        executor.fireAdEvent("onAdRewarded", data)
+        executor.fireAdEvent("onAdRewarded", data);
     }
 
     @Override

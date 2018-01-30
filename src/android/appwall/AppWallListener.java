@@ -73,7 +73,7 @@ class AppWallListener extends AdListener {
             e.printStackTrace();
         }
         executor.fireAdEvent("personaly.appwall.events.REWARDED", data);
-        executor.fireAdEvent("onAdRewarded", data)
+        executor.fireAdEvent("onAdRewarded", data);
     }
 
     @Override

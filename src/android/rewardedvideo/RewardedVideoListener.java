@@ -80,7 +80,7 @@ class RewardedVideoListener extends AdListener {
             e.printStackTrace();
         }
         executor.fireAdEvent("personaly.rewardedvideo.events.REWARDED", data);
-        executor.fireAdEvent("onAdRewarded", data)
+        executor.fireAdEvent("onAdRewarded", data);
     }
 
     @Override

@@ -77,7 +77,7 @@ class PopupOfferListener extends AdListener {
             e.printStackTrace();
         }
         executor.fireAdEvent("personaly.popupoffer.events.REWARDED", data);
-        executor.fireAdEvent("onAdRewarded", data)
+        executor.fireAdEvent("onAdRewarded", data);
     }
 
     @Override
