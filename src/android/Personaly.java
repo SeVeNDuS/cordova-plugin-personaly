@@ -26,7 +26,7 @@ import java.security.NoSuchAlgorithmException;
 import java.util.Iterator;
 
 import name.sevendus.cordova.personaly.interstitial.InterstitialExecutor;
-import name.sevendus.cordova.personaly.rewardvideo.RewardVideoExecutor;
+import name.sevendus.cordova.personaly.rewardvideo.RewardedVideoExecutor;
 import name.sevendus.cordova.personaly.offerwall.OfferWallExecutor;
 import name.sevendus.cordova.personaly.appwall.AppWallExecutor;
 import name.sevendus.cordova.personaly.popupoffer.PopupOfferExecutor;
@@ -45,7 +45,7 @@ public class Personaly extends CordovaPlugin {
     public final PersonalyConfig config = new PersonalyConfig();
 
     private InterstitialExecutor interstitialExecutor = null;
-    private RewardVideoExecutor rewardVideoExecutor = null;
+    private RewardedVideoExecutor rewardedVideoExecutor = null;
     private OfferWallExecutor offerWallExecutor = null;
     private AppWallExecutor appWallExecutor = null;
     private PopupOfferExecutor popupOfferExecutor = null;
@@ -74,8 +74,8 @@ public class Personaly extends CordovaPlugin {
         if (interstitialExecutor == null) {
             interstitialExecutor = new InterstitialExecutor(this);
         }
-        if (rewardVideoExecutor == null) {
-            rewardVideoExecutor = new RewardVideoExecutor(this);
+        if (rewardedVideoExecutor == null) {
+            rewardedVideoExecutor = new RewardedVideoExecutor(this);
         }
         if (offerWallExecutor == null) {
             offerWallExecutor = new OfferWallExecutor(this);
@@ -192,9 +192,9 @@ public class Personaly extends CordovaPlugin {
             interstitialExecutor.destroy();
             interstitialExecutor = null;
         }
-        if (rewardVideoExecutor != null) {
-            rewardVideoExecutor.destroy();
-            rewardVideoExecutor = null;
+        if (rewardedVideoExecutor != null) {
+            rewardedVideoExecutor.destroy();
+            rewardedVideoExecutor = null;
         }
         if (offerWallExecutor != null) {
             offerWallExecutor.destroy();

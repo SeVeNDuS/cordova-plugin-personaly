@@ -1,4 +1,4 @@
-package name.sevendus.cordova.personaly.rewardvideo;
+package name.sevendus.cordova.personaly.rewardedvideo;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -16,13 +16,13 @@ import name.sevendus.cordova.personaly.Personaly;
 
 public class RewardedVideoExecutor extends AbstractExecutor {
     /**
-     * RewardVideo
+     * RewardedVideo
      */
     private CampaignAd rewardedVideoAd;
     boolean isRewardedVideoLoading = false;
     final Object rewardedVideoLock = new Object();
 
-    public RewardVideoExecutor(Personaly plugin) {
+    public RewardedVideoExecutor(Personaly plugin) {
         super(plugin);
     }
 
@@ -54,7 +54,7 @@ public class RewardedVideoExecutor extends AbstractExecutor {
 
     public PluginResult showAd(final boolean show, final CallbackContext callbackContext) {
         if (rewardedVideoAd == null) {
-            return new PluginResult(PluginResult.Status.ERROR, "rewardedVideoAd is null, call createRewardVideo first.");
+            return new PluginResult(PluginResult.Status.ERROR, "rewardedVideoAd is null, call createRewardedVideo first.");
         }
         CordovaInterface cordova = plugin.cordova;
 
