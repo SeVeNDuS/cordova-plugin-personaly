@@ -32,15 +32,15 @@ Go to the [Personaly portal](http://persona.ly/) and add your app (if you haven'
 
 ### 2. Display advertisements
 
-#### [RewardedVideo Ad](https://sevendus.github.io/cordova-plugin-personaly/variable/index.html#static-variable-banner)
+#### [RewardedVideo Ad](https://sevendus.github.io/cordova-plugin-personaly/variable/index.html#static-variable-rewardedvideo)
 
 #### [Interstitial Ad](https://sevendus.github.io/cordova-plugin-personaly/variable/index.html#static-variable-interstitial)
 
-#### [PopUp Offer Ad](https://sevendus.github.io/cordova-plugin-personaly/variable/index.html#static-variable-rewardvideo)
+#### [PopUp Offer Ad](https://sevendus.github.io/cordova-plugin-personaly/variable/index.html#static-variable-popupoffer)
 
-#### [OfferWall Ad](https://sevendus.github.io/cordova-plugin-personaly/variable/index.html#static-variable-rewardvideo)
+#### [OfferWall Ad](https://sevendus.github.io/cordova-plugin-personaly/variable/index.html#static-variable-offerwall)
 
-#### [AppWall Ad](https://sevendus.github.io/cordova-plugin-personaly/variable/index.html#static-variable-rewardvideo)
+#### [AppWall Ad](https://sevendus.github.io/cordova-plugin-personaly/variable/index.html#static-variable-appwall)
 
 ### 3. Profit
 

@@ -24,15 +24,6 @@ public class PersonalyConfigTest {
     }
 
     @Test
-    public void canSetBannerUnitId() throws JSONException {
-        PersonalyConfig config = new PersonalyConfig();
-        assertEquals("ca-app-pub-3940256099942544/6300978111", config.getBannerAdUnitId());
-
-        config.setOptions(new JSONObject("{\"publisherId\": \"banner-id\"}"));
-        assertEquals("banner-id", config.getBannerAdUnitId());
-    }
-
-    @Test
     public void canSetInterstitialAdUnitId() throws JSONException {
         PersonalyConfig config = new PersonalyConfig();
         assertEquals("ca-app-pub-3940256099942544/1033173712", config.getInterstitialAdUnitId());
@@ -42,75 +33,41 @@ public class PersonalyConfigTest {
     }
 
     @Test
-    public void canSetAdSize() throws JSONException {
-        PersonalyConfig config = new PersonalyConfig();
-        assertEquals(config.adSize, AdSize.SMART_BANNER);
-
-        config.setOptions(new JSONObject("{\"adSize\": \"BANNER\"}"));
-        assertEquals(config.adSize, AdSize.BANNER);
-
-        config.setOptions(new JSONObject("{\"adSize\": \"FULL_BANNER\"}"));
-        assertEquals(config.adSize, AdSize.FULL_BANNER);
-
-        config.setOptions(new JSONObject("{\"adSize\": \"LARGE_BANNER\"}"));
-        assertEquals(config.adSize, AdSize.LARGE_BANNER);
-
-        config.setOptions(new JSONObject("{\"adSize\": \"LEADERBOARD\"}"));
-        assertEquals(config.adSize, AdSize.LEADERBOARD);
-
-        config.setOptions(new JSONObject("{\"adSize\": \"MEDIUM_RECTANGLE\"}"));
-        assertEquals(config.adSize, AdSize.MEDIUM_RECTANGLE);
-
-        config.setOptions(new JSONObject("{\"adSize\": \"WIDE_SKYSCRAPER\"}"));
-        assertEquals(config.adSize, AdSize.WIDE_SKYSCRAPER);
-
-        config.setOptions(new JSONObject("{\"adSize\": \"FLUID\"}"));
-        assertEquals(config.adSize, AdSize.FLUID);
-
-        config.setOptions(new JSONObject("{\"adSize\": \"SEARCH\"}"));
-        assertEquals(config.adSize, AdSize.SEARCH);
-
-        // backward-compatibility
-        config.setOptions(new JSONObject("{\"adSize\": \"IAB_BANNER\"}"));
-        assertEquals(config.adSize, AdSize.FULL_BANNER);
-
-        config.setOptions(new JSONObject("{\"adSize\": \"IAB_MRECT\"}"));
-        assertEquals(config.adSize, AdSize.MEDIUM_RECTANGLE);
-
-        config.setOptions(new JSONObject("{\"adSize\": \"IAB_LEADERBOARD\"}"));
-        assertEquals(config.adSize, AdSize.LEADERBOARD);
-    }
-
-    @Test
     public void canSetAutoShow() throws JSONException {
         PersonalyConfig config = new PersonalyConfig();
         assertEquals(true, config.autoShow);
-        assertEquals(true, config.autoShowBanner);
         assertEquals(true, config.autoShowInterstitial);
+        assertEquals(true, config.autoRewardedVideo);
+        assertEquals(true, config.autoPopupOffer);
 
         config.setOptions(new JSONObject("{\"autoShow\": false}"));
         assertEquals(false, config.autoShow);
-        assertEquals(true, config.autoShowBanner);
-        assertEquals(true, config.autoShowInterstitial);
+        assertEquals(false, config.autoShowInterstitial);
+        assertEquals(false, config.autoRewardedVideo);
+        assertEquals(false, config.autoPopupOffer);
 
         config.setOptions(new JSONObject("{\"autoShow\": true}"));
         assertEquals(true, config.autoShow);
-        assertEquals(true, config.autoShowBanner);
         assertEquals(true, config.autoShowInterstitial);
-
-        config.setBannerOptions(new JSONObject("{\"autoShow\": false}"));
-        assertEquals(true, config.autoShow);
-        assertEquals(false, config.autoShowBanner);
-        assertEquals(true, config.autoShowInterstitial);
-
-        config.setBannerOptions(new JSONObject("{\"autoShowBanner\": true}"));
-        assertEquals(true, config.autoShow);
-        assertEquals(true, config.autoShowBanner);
-        assertEquals(true, config.autoShowInterstitial);
+        assertEquals(true, config.autoRewardedVideo);
+        assertEquals(true, config.autoPopupOffer);
 
         config.setInterstitialOptions(new JSONObject("{\"autoShow\": false}"));
         assertEquals(true, config.autoShow);
-        assertEquals(true, config.autoShowBanner);
         assertEquals(false, config.autoShowInterstitial);
+        assertEquals(true, config.autoRewardedVideo);
+        assertEquals(true, config.autoPopupOffer);
+
+        config.setRewardedVideoOptions(new JSONObject("{\"autoShow\": false}"));
+        assertEquals(true, config.autoShow);
+        assertEquals(true, config.autoShowInterstitial);
+        assertEquals(false, config.autoRewardedVideo);
+        assertEquals(true, config.autoPopupOffer);
+
+        config.setPopupOfferOptions(new JSONObject("{\"autoShow\": false}"));
+        assertEquals(true, config.autoShow);
+        assertEquals(true, config.autoShowInterstitial);
+        assertEquals(true, config.autoRewardedVideo);
+        assertEquals(false, config.autoPopupOffer);
     }
 }

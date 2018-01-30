@@ -37,10 +37,9 @@ public class PersonalyConfig {
     public boolean isTesting = false;
 
     public boolean autoShow = true;
-    public boolean autoShowBanner = true;
     public boolean autoShowInterstitial = true;
-    public boolean autoShowRewardedVideo = false;
-    public boolean autoShowPopupOffer = false;
+    public boolean autoShowRewardedVideo = true;
+    public boolean autoShowPopupOffer = true;
 
     public String gender = null;
     public String dateOfBirth = null;
