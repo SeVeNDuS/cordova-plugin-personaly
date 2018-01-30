@@ -26,7 +26,7 @@ import java.security.NoSuchAlgorithmException;
 import java.util.Iterator;
 
 import name.sevendus.cordova.personaly.interstitial.InterstitialExecutor;
-import name.sevendus.cordova.personaly.rewardvideo.RewardedVideoExecutor;
+import name.sevendus.cordova.personaly.rewardedvideo.RewardedVideoExecutor;
 import name.sevendus.cordova.personaly.offerwall.OfferWallExecutor;
 import name.sevendus.cordova.personaly.appwall.AppWallExecutor;
 import name.sevendus.cordova.personaly.popupoffer.PopupOfferExecutor;
