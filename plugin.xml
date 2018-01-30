@@ -46,7 +46,7 @@
         </config-file>
 
         <source-file src="src/android/interstitial" target-dir="src/name/sevendus/cordova/personaly" />
-        <source-file src="src/android/rewardvideo" target-dir="src/name/sevendus/cordova/personaly" />
+        <source-file src="src/android/rewardedvideo" target-dir="src/name/sevendus/cordova/personaly" />
         <source-file src="src/android/offerwall" target-dir="src/name/sevendus/cordova/personaly" />
         <source-file src="src/android/popupoffer" target-dir="src/name/sevendus/cordova/personaly" />
         <source-file src="src/android/appwall" target-dir="src/name/sevendus/cordova/personaly" />
