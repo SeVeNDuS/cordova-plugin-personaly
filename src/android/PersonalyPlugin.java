@@ -36,7 +36,7 @@ import name.sevendus.cordova.personaly.popupoffer.PopupOfferExecutor;
  * This plugin can be used to request Personaly ads natively via the Personaly SDK.
  * The Personaly SDK is a dependency for this plugin.
  */
-public class Personaly extends CordovaPlugin {
+public class PersonalyPlugin extends CordovaPlugin {
     /**
      * Common tag used for logging statements.
      */
