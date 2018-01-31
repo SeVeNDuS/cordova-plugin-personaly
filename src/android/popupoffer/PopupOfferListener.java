@@ -10,7 +10,7 @@ import org.json.JSONObject;
 import name.sevendus.cordova.personaly.AbstractExecutor;
 
 class PopupOfferListener extends AdListener {
-    private final PopupOfferxecutor executor;
+    private final PopupOfferExecutor executor;
 
     PopupOfferListener(PopupOfferExecutor executor) {
         this.executor = executor;
