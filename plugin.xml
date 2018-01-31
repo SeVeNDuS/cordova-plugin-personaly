@@ -53,7 +53,7 @@
         
         <source-file src="src/android/AbstractExecutor.java" target-dir="src/name/sevendus/cordova/personaly" />
         <source-file src="src/android/Actions.java" target-dir="src/name/sevendus/cordova/personaly" />
-        <source-file src="src/android/Personaly.java" target-dir="src/name/sevendus/cordova/personaly" />
+        <source-file src="src/android/PersonalyPlugin.java" target-dir="src/name/sevendus/cordova/personaly" />
         <source-file src="src/android/PersonalyConfig.java" target-dir="src/name/sevendus/cordova/personaly" />
         <source-file src="src/android/CordovaEventBuilder.java" target-dir="src/name/sevendus/cordova/personaly" />
 
