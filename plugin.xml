@@ -59,6 +59,7 @@
 
         <framework src="src/android/personaly.gradle" custom="true" type="gradleReference" />
         <framework src="com.google.android.gms:play-services-basement:11.0.2" />
+        <framework src="ly.persona.sdk:personaly:1.0.632@aar" />
     </platform>
 
     <platform name="ios">

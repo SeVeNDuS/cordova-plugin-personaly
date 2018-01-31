@@ -4,10 +4,3 @@ repositories {
         url "https://dl.bintray.com/personaly/maven"
    }
 }
-
-cdvPluginPostBuildExtras.add({
-
-    dependencies {
-        compile 'ly.persona.sdk:personaly:1.0.632@aar'
-    }
-});
