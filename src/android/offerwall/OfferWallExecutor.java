@@ -11,7 +11,7 @@ import org.apache.cordova.PluginResult;
 import org.json.JSONObject;
 
 import name.sevendus.cordova.personaly.AbstractExecutor;
-import name.sevendus.cordova.personaly.Personaly;
+import name.sevendus.cordova.personaly.PersonalyPlugin;
 import name.sevendus.cordova.personaly.PersonalyConfig;
 
 public class OfferWallExecutor extends AbstractExecutor {
@@ -20,7 +20,7 @@ public class OfferWallExecutor extends AbstractExecutor {
      */
     private OfferWallAd offerWallAd;
 
-    public OfferWallExecutor(Personaly plugin) {
+    public OfferWallExecutor(PersonalyPlugin plugin) {
         super(plugin);
     }
 

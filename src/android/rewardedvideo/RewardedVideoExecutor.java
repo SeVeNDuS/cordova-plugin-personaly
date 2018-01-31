@@ -12,7 +12,7 @@ import org.apache.cordova.PluginResult;
 import org.json.JSONObject;
 
 import name.sevendus.cordova.personaly.AbstractExecutor;
-import name.sevendus.cordova.personaly.Personaly;
+import name.sevendus.cordova.personaly.PersonalyPlugin;
 
 public class RewardedVideoExecutor extends AbstractExecutor {
     /**
@@ -22,7 +22,7 @@ public class RewardedVideoExecutor extends AbstractExecutor {
     boolean isRewardedVideoLoading = false;
     final Object rewardedVideoLock = new Object();
 
-    public RewardedVideoExecutor(Personaly plugin) {
+    public RewardedVideoExecutor(PersonalyPlugin plugin) {
         super(plugin);
     }
 

@@ -1,4 +1,4 @@
-package name.sevendus.cordova.personaly.interstitial;
+package name.sevendus.cordova.personaly.rewardedvideo;
 
 import android.util.Log;
 

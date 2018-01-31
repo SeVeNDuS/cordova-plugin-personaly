@@ -17,9 +17,9 @@ import org.json.JSONObject;
  * document.addEventListener('onAdClosed', function());
  */
 public abstract class AbstractExecutor {
-    protected Personaly plugin;
+    protected PersonalyPlugin plugin;
 
-    public AbstractExecutor(Personaly plugin) {
+    public AbstractExecutor(PersonalyPlugin plugin) {
         this.plugin = plugin;
     }
 
