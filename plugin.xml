@@ -57,7 +57,7 @@
         <source-file src="src/android/PersonalyConfig.java" target-dir="src/name/sevendus/cordova/personaly" />
         <source-file src="src/android/CordovaEventBuilder.java" target-dir="src/name/sevendus/cordova/personaly" />
 
-        <framework src="src/android/personaly.gradle" custom="true" type="gradleReference" />
+        <source-file src="src/android/libs/Personalyv1.0.8.aar" target-dir="libs"/>
         <framework src="com.google.android.gms:play-services-basement:11.0.2" />
     </platform>
 
